@@ -29,7 +29,7 @@ export default function Home() {
       <div>
         <Appbar />
       </div>
-      <div className="mt-20 flex flex-col gap-20">
+      <div className="mt-20 flex flex-col gap-20 ">
         {/* Heading of website */}
         <div className="flex flex-col items-center justify-center gap-6">
           <div className="space-y-3 mt-[10rem] ">
@@ -46,8 +46,8 @@ export default function Home() {
         {/* Heading of website finishes */}
 
         {/* Vision Mission  */}
-        <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 place-items-center p-4 gap-14">
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 place-items-center p-4 mx-8 gap-14">
+          <div className="px-8">
             <Card title="Vision" desc="Our Vision is to empower students with the power of coding and learning in public, that can unlock a world of infinite possibilities, and to alleviate the tech leaders of tommorow." />
           </div>
           <div>
@@ -89,7 +89,7 @@ export default function Home() {
       </div>
       <div className="px-24">
         <h1 className="text-center text-xl mb-8 my-5">Meet Our Team</h1>
-        <div className="grid grid-cols-2 lg:grid-cols-5 gap-4 px-10 mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 px-10 mx-auto">
           {coreTeam.map((data, index) => (
             <Team key={index} name={data.name} img={data.img} role={data.role} />
           ))}
