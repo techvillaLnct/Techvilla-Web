@@ -1,101 +1,110 @@
+"use client"
+import { Appbar } from "@/Components/Appbar";
+import { Card } from "@/Components/Card";
+import { Footer } from "@/Components/Footer";
+import { Button2 } from "@/Components/Button2";
+import { coreTeam } from "@/data/data";
+import { useRouter } from "next/navigation"
 import Image from "next/image";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, } from "@/Components/carousel"
+import { Team } from "@/Components/Team";
+import { UpcomingEvent } from "@/Components/UpcomingEvent";
+const images = [
+  "/glimpses/merch-launch.jpg",
+  "/glimpses/codebeta-1.jpg",
+  "/glimpses/codebeta-winners.jpg",
+  "/glimpses/codebeta-2.jpg",
+  "/glimpses/codebeta-3.jpg",
+  "/glimpses/member-sync.jpg",
+  "/glimpses/opensource-host.jpg",
+  "/glimpses/opensource-team.jpg",
+  "/glimpses/solidity.png",
+  "/glimpses/merch-launch-2.jpg",
+];
 
 export default function Home() {
+  const router = useRouter();
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className=" h-full bg-cover bg-center  text-white" style={{ backgroundImage: "url('/techvilla-bg.png')" }}>
+      <div>
+        <Appbar />
+      </div>
+      <div className="mt-20 flex flex-col gap-20">
+        {/* Heading of website */}
+        <div className="flex flex-col items-center justify-center gap-6">
+          <div className="space-y-3 mt-[10rem] ">
+            <Image src="/techvilla-heading-logo.png" className="flex items-center" width={662} height={90} alt="" />
+            <h2 className="text-center font-semibold">CODE . CREATE . CONTRIBUTE</h2>
+          <div className="mt-2 space-y-4 flex flex-col items-center gap-8">
+            <p className="text-center ">Empowering the Next Generation of Developers</p>
+            <Button2 onClick={() => {
+              router.push("https://tr.ee/Lgng69lmIE")
+            }} text="Join Us" />
+          </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        {/* Heading of website finishes */}
+
+        {/* Vision Mission  */}
+        <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 place-items-center p-4 gap-14">
+          <div>
+            <Card title="Vision" desc="Our Vision is to empower students with the power of coding and learning in public, that can unlock a world of infinite possibilities, and to alleviate the tech leaders of tommorow." />
+          </div>
+          <div>
+            <Card title="About Us" desc="TechVilla, LNCT's Coding Club, is a dynamic haven for tech-enthusiasts.We offer skill development, project collaboration, and networking opportunities. Join us at TechVilla, where we code, create, and contribute together. " />
+          </div>
+          <div>
+            <Card title="Mission" desc=" Our mission is to provide hands-on learning opportunities through workshops, coding challenges, and real-life projects. We believe that practical experience is key to mastering tech skills." />
+          </div>
+        </div>
+        {/* Vision Mission ends  */}
+
+        {/* Glimpses */}
+        <div className="flex flex-col items-center gap-6 my-4">
+          <h1 className="text-center text-xl">Glimpses</h1>
+          <Carousel className="w-full max-w-7xl rounded-md">
+            <CarouselContent className="rounded-md">
+              {images.map((image, index) => (
+                <CarouselItem key={index}>
+                  <div className="p-1 flex justify-center w-[1300px] h-[650px]">
+                    <Image
+                      src={image}
+                      className="rounded-md"
+                      width={1300}
+                      height={650}
+                      alt={`Image ${index + 1}`}
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+        </div>
+        {/* Glimpses end hota hai*/}
+      <div className="flex flex-col items-center">
+        <h1 className="text-center text-xl mb-8 my-5">Upcoming Events</h1>
+        <UpcomingEvent />
+      </div>
+      <div className="px-24">
+        <h1 className="text-center text-xl mb-8 my-5">Meet Our Team</h1>
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-4 px-10 mx-auto">
+          {coreTeam.map((data, index) => (
+            <Team key={index} name={data.name} img={data.img} role={data.role} />
+          ))}
+        </div>
+      </div>
+      </div>
+
+
+      {/* CORE TEAM */}
+
+      <div>
+        <Footer />
+      </div>
+
     </div>
   );
 }
+
