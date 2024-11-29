@@ -6,9 +6,9 @@ import { Button2 } from "@/components/Button2";
 import { coreTeam } from "@/data/data";
 import { useRouter } from "next/navigation"
 import Image from "next/image";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, } from "@/Components/carousel"
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, } from "@/components/Carousel"
 import { Team } from "@/components/Team";
-import { UpcomingEvent } from "@/components/UpcomingEvent";
+import { UpcomingEvent } from "@/components/UpcomingEvents";
 const images = [
   "/glimpses/merch-launch.jpg",
   "/glimpses/codebeta-1.jpg",

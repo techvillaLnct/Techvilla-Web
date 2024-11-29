@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Button } from "@/Components/Button"
+import { Button } from "@/components/Button"
 import { useRouter } from "next/navigation"
 export const UpcomingEvent = () => {
     const router = useRouter()
