@@ -1,14 +1,14 @@
 "use client"
-import { Appbar } from "@/Components/Appbar";
-import { Card } from "@/Components/Card";
-import { Footer } from "@/Components/Footer";
-import { Button2 } from "@/Components/Button2";
+import { Appbar } from "@/components/Appbar";
+import { Card } from "@/components/Card";
+import { Footer } from "@/components/Footer";
+import { Button2 } from "@/components/Button2";
 import { coreTeam } from "@/data/data";
 import { useRouter } from "next/navigation"
 import Image from "next/image";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, } from "@/Components/carousel"
-import { Team } from "@/Components/Team";
-import { UpcomingEvent } from "@/Components/UpcomingEvent";
+import { Team } from "@/components/Team";
+import { UpcomingEvent } from "@/components/UpcomingEvent";
 const images = [
   "/glimpses/merch-launch.jpg",
   "/glimpses/codebeta-1.jpg",
