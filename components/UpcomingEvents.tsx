@@ -5,9 +5,9 @@ export const UpcomingEvent = () => {
     const router = useRouter()
     return <div id="events" className="w-full max-w-md flex flex-col  gap-4 border  rounded-md backdrop-blur-lg">
 
-        <Image src={"/orientation.png"} className="rounded-md w-full " width={500} height={0} alt=""  ></Image>
-        <h1 className="text-center font-semibold ">Techvilla Orientation 2024-25</h1>
-        <p className="font-extralight px-4" >Join us for the session Packed Orientation session for the Offical Coding Club of Lnct</p>
+        <Image src={"/codebeta2.0.png"} className="rounded-md w-full " width={500} height={0} alt=""  ></Image>
+        <h1 className="text-center font-semibold ">CodeBeta 2.0</h1>
+        <p className="font-extralight px-4" >Join us for most awaiting LNCT Coding Competition - CODEBETA 2.0</p>
         <div className="flex flex-col gap-2">
             <div className="flex gap-2 px-8">
                 <Image src={"/Location.svg"} alt="" width={28} height={28} ></Image>
@@ -15,7 +15,7 @@ export const UpcomingEvent = () => {
             </div>
             <div className="flex gap-2  px-8">
                 <Image src={"/date.svg"} alt="" width={28} height={28} ></Image>
-                <p>23rd october</p>
+                <p>7th December</p>
             </div>
         </div>
         <div className=" p-2">
