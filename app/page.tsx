@@ -35,18 +35,18 @@ export default function Home() {
           <div className="space-y-3 mt-[10rem] ">
             <Image src="/techvilla-heading-logo.png" className="flex items-center" width={662} height={90} alt="" />
             <h2 className="text-center font-semibold">CODE . CREATE . CONTRIBUTE</h2>
-          <div className="mt-2 space-y-4 flex flex-col items-center gap-8">
-            <p className="text-center ">Empowering the Next Generation of Developers</p>
-            <Button2 onClick={() => {
-              router.push("https://tr.ee/Lgng69lmIE")
-            }} text="Join Us" />
-          </div>
+            <div className="mt-2 space-y-4 flex flex-col items-center gap-8">
+              <p className="text-center ">Empowering the Next Generation of Developers</p>
+              <Button2 onClick={() => {
+                router.push("https://tr.ee/Lgng69lmIE")
+              }} text="Join Us" />
+            </div>
           </div>
         </div>
         {/* Heading of website finishes */}
 
         {/* Vision Mission  */}
-        <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 place-items-center p-4 mx-8 gap-14">
+        <div className="grid grid-cols-1 md:grid-cols-2    lg:grid-cols-3 place-items-center  p-4 mx-16 gap-14">
           <div className="px-8">
             <Card title="Vision" desc="Our Vision is to empower students with the power of coding and learning in public, that can unlock a world of infinite possibilities, and to alleviate the tech leaders of tommorow." />
           </div>
@@ -60,16 +60,16 @@ export default function Home() {
         {/* Vision Mission ends  */}
 
         {/* Glimpses */}
-        <div className="flex flex-col items-center gap-6 my-4">
+        <div className="flex flex-col items-center gap-4 my-1 px-5">
           <h1 className="text-center text-xl">Glimpses</h1>
           <Carousel className="w-full max-w-7xl rounded-md">
             <CarouselContent className="rounded-md">
               {images.map((image, index) => (
                 <CarouselItem key={index}>
-                  <div className="p-1 flex justify-center w-[1300px] h-[650px]">
+                  <div className="p-1 flex justify-center w-full h-[500px] md:w-[1300px] md:h-[650px] ">
                     <Image
                       src={image}
-                      className="rounded-md"
+                      className="rounded-md object-contain"
                       width={1300}
                       height={650}
                       alt={`Image ${index + 1}`}
@@ -83,18 +83,24 @@ export default function Home() {
           </Carousel>
         </div>
         {/* Glimpses end hota hai*/}
-      <div className="flex flex-col items-center">
-        <h1 className="text-center text-xl mb-8 my-5">Upcoming Events</h1>
-        <UpcomingEvent />
-      </div>
-      <div className="px-24">
-        <h1 className="text-center text-xl mb-8 my-5">Meet Our Team</h1>
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 px-10 mx-auto">
-          {coreTeam.map((data, index) => (
-            <Team key={index} name={data.name} img={data.img} role={data.role} />
-          ))}
+        <div className="flex flex-col items-center">
+          <h1 className="text-center text-xl mb-8 my-5">Upcoming Events</h1>
+          <UpcomingEvent />
         </div>
-      </div>
+        <div className="px-24">
+          <h1 className="text-center text-xl mb-8 my-5">Meet Our Team</h1>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 px-10 mx-auto">
+            {coreTeam.map((data, index) => (
+              <Team
+                key={index}
+                name={data.name}
+                img={data.img}
+                role={data.role}
+                links={data.links} // Pass the links prop
+              />
+            ))}
+          </div>
+        </div>
       </div>
 
 
