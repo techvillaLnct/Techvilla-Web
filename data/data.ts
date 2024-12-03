@@ -64,7 +64,7 @@ export const coreTeam = [
         }
     },
     {
-        name:"Mereena R Thomas",
+        name:"Mereena Thomas",
         role:"Creative Head",
         img:"/coreTeam/mareena.png",
         links:{
