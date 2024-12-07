@@ -15,7 +15,7 @@ export const UpcomingEvent = () => {
             </div>
             <div className="flex gap-2  px-8">
                 <Image src={"/date.svg"} alt="" width={28} height={28} ></Image>
-                <p>7th December</p>
+                <p>14th December</p>
             </div>
         </div>
         <div className=" p-2">
