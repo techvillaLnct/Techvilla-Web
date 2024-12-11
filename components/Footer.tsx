@@ -10,16 +10,16 @@ export const Footer = () => {
                 <div className="flex flex-col items-center md:items-start gap-4">
                     <p className="text-lg md:text-xl font-medium">Join Us:</p>
                     <div className="flex gap-4">
-                        <Link href={"https://www.instagram.com/techvilla_lnct/"} >
+                        <Link href={"https://www.instagram.com/techvilla_lnct/"} target="_blank"   >
                             <Image src="/insta.svg" width="40" height="40" alt="Instagram" className="hover:scale-125 transition-transform" />
                         </Link>
-                        <Link href={""}>
+                        <Link href={"https://x.com/Techvilla_"} target="_blank" >
                             <Image src="/X.svg" width="40" height="40" alt="X" className="hover:scale-150 transition-transform" />
                         </Link>
-                        <Link href={""}>
+                        <Link href={"https://github.com/techvillaLnct"} target="_blank" >
                             <Image src="/github.svg" width="40" height="40" alt="GitHub" className="hover:scale-[1.7] transition-transform" />
                         </Link>
-                        <Link href={""}>
+                        <Link href={"https://www.linkedin.com/in/tech-villa-660a8a290"} target="_blank" >
                             <Image src="/linkedin.svg" width="40" height="40" alt="LinkedIn" className="hover:scale-[1.8] transition-transform" />
                         </Link>
                     </div>

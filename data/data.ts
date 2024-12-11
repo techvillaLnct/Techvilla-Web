@@ -140,6 +140,71 @@ export const coreTeam = [
     },
 ]
 
+export const glimpses = [
+    {
+        img:"/glimpses/team-24.jpeg",
+        desc:"Meet The Offical Team of Core Team 2024-25"
+    },
+    {
+        img:"/glimpses/orientation-24-1.png",
+        desc:"Orientation-Day , 23rd November,2024"
+    },
+    {
+        img:"/glimpses/orientation-24-2.jpg",
+        desc:"TechVilla President, Aryan Mentoring about Open-Source Importance"
+    },
+    {
+        img:"/glimpses/orientation-24-3.jpg",
+        desc:"TechVilla President, Athar Introducing about Techvilla Club"
+    },
+    {
+        img:"/glimpses/orientation-dance.jpeg",
+        desc:"Traditional Dance Performance during the Orientation Event "
+    },
+    {
+        img:"/glimpses/aagaz-band.jpeg",
+        desc:"Our Events Are Not Boring ! "
+    },
+    {
+        img:"/glimpses/merch-launch.jpg",
+        desc:"TechVilla Official Merchandise Launch"
+    },
+    {
+        img:"/glimpses/codebeta-1.jpg",
+        desc:"Techvilla CodeBeta 1.0 March 2024 Team"
+    },
+    {
+        img:"/glimpses/codebeta-winners.jpg",
+        desc:"CodeBeta 1.0 Winners"
+    },
+    {
+        img:"/glimpses/codebeta-2.jpg",
+        desc:"Students coding during 3-Hour Hackathon in CodeBeta"
+    },
+    {
+        img:"/glimpses/codebeta-3.jpg",
+        desc:"Students coding during 3-Hour Hackathon in CodeBeta"
+    },
+    {
+        img:"/glimpses/member-sync.jpg",
+        desc:"Talking to Techvilla special 100 Members of 2023-24"
+    },
+    {
+        img:"/glimpses/opensource-host.jpg",
+        desc:"Open Source Seminar by Mr.Ashutosh Jha for only Techvilla Members"
+    },
+    {
+        img:"/glimpses/opensource-team.jpg",
+        desc:"Glimpse of Open Source Seminar students and Team"
+    },
+    {
+        img:"/glimpses/solidity.png",
+        desc:"Conducting 3-Day Solidity workshop to introduce people to Web-3"
+    },
+
+
+  ];
+
 //past events
 export const pastEvents=[
     {
@@ -240,3 +305,4 @@ export const roadMapsdetails = [
         link: "https://github.com/techvillaLnct/Roadmap/tree/main/roadmaps-main/roadmaps-main/iOS-Development"
     }
 ];
+
