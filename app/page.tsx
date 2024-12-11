@@ -56,7 +56,7 @@ export default function Home() {
 
         {/* Glimpses */}
         <div className="flex flex-col items-center gap-4 my-1 px-5 -mt-1 md:mt-20 ">
-          <h1 className={`${inter.className} text-center text-xl bg-white text-black rounded-2xl p-2`}>Glimpses</h1>
+          <h1 className={`${inter.className} text-center text-xl bg-white text-black rounded-2xl p-2 mt-10 md:mt-0`}>Glimpses</h1>
           <Carousel className="w-full max-w-7xl rounded-md">
             <CarouselContent className="rounded-md">
               {glimpses.map((data, index) => (
@@ -81,7 +81,7 @@ export default function Home() {
         </div>
         {/* Glimpses end hota hai*/}
         <div className="flex flex-col items-center -mt-10 gap-4 md:gap-5 ">
-          <h1 id="events" className={`${inter.className} text-center text-xl bg-white text-black rounded-2xl p-2 md:mt-16`}>Upcoming Events</h1>
+          <h1 id="events" className={`${inter.className} text-center text-xl bg-white text-black rounded-2xl p-2 mt-10 md:mt-16`}>Upcoming Events</h1>
           <UpcomingEvent />
         </div>
         <div id="team" className="px-12  md:px-24 flex flex-col items-center">
