@@ -17,7 +17,7 @@ const socialIcons = {
 
 export const Team = ({ name, role, img, links }: TeamProps) => {
   return (
-    <div id="team" className="relative flex flex-col items-center gap-2 group">
+    <div className="relative flex flex-col items-center gap-2 group">
       {/* Image Container with Hover Effect */}
       <div className="relative w-[100px] h-[100px] sm:w-[120px] sm:h-[120px] md:w-[150px] md:h-[150px]">
         <Image 

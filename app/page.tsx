@@ -84,10 +84,10 @@ export default function Home() {
         </div>
         {/* Glimpses end hota hai*/}
         <div className="flex flex-col items-center">
-          <h1 className="text-center text-xl mb-8 my-5">Upcoming Events</h1>
+          <h1 id="events" className="text-center text-xl mb-8 my-5 pt-4">Upcoming Events</h1>
           <UpcomingEvent />
         </div>
-        <div className="px-24">
+        <div id="team" className="px-24">
           <h1 className="text-center text-xl mb-8 my-5">Meet Our Team</h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 px-10 mx-auto">
             {coreTeam.map((data, index) => (

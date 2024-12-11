@@ -170,7 +170,7 @@ export const roadMapsdetails = [
     {
         img: "/roadmaps/dsa.png",
         title: "DSA Roadmap",
-        desc: "Master Data Structure and Algorithm and never miss your coding rounds",
+        desc: "Master Data Structure and Algorithm and never miss your coding rounds.",
         link: "https://github.com/techvillaLnct/Roadmap/tree/main/roadmaps-main/roadmaps-main/DSA-Learning-Series-2024"
     },
     {

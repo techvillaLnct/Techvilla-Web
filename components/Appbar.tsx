@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/Button"
 import { useState } from "react";
-import {GeistMonoVF,geistVF,inter} from '../app/fonts'
+import {geistVF} from '../app/fonts'
 
 export const Appbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -52,10 +52,10 @@ export const Appbar = () => {
                     <Link href="/codebeta-2.0" className="hover:text-gray-300 hover:scale-110 transition-transform">
                         CodeBeta 2.0
                     </Link>
-                    <Link href="#team" className="hover:text-gray-300 hover:scale-110 transition-transform">
+                    <Link href="/#team" className="hover:text-gray-300 hover:scale-110 transition-transform">
                         Our Team
                     </Link>
-                    <Link href="#events" className="hover:text-gray-300 hover:scale-110 transition-transform">
+                    <Link href="/#events" className="hover:text-gray-300 hover:scale-110 transition-transform">
                         Events
                     </Link>
                     <Button onClick={()=>{
