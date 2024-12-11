@@ -20,7 +20,7 @@ export const UpcomingEvent = () => {
         </div>
         <div className=" p-2">
             <Button className="w-full" onClick={() => {
-                router.push("https://lu.ma/ncvzi4pj")
+                router.push("/codebeta")
             }}
             >Register Now</Button>
         </div>

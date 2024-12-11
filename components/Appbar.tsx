@@ -64,6 +64,9 @@ export const Appbar = () => {
                     <Link href="/ourTeam" className="hover:text-gray-300">
                         Our Team
                     </Link>
+                    <Link href="/codebeta" className="hover:text-gray-300">
+                        Codebeta
+                    </Link>
                     <Link href="#events" className="hover:text-gray-300">
                         Events
                     </Link>
