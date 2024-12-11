@@ -25,7 +25,7 @@ export default function RootLayout({
       <body
         className={` antialiased`}
       >
-        <Link href={"/codebeta"} className="flex justify-center bg-[#FF8B12] text-black font-semibold py-1  p-8 ">
+        <Link href={"/codebeta-2.0"} className="flex justify-center bg-[#FF8B12] text-black font-semibold py-1  p-8 ">
           Register For CodeBeta 2.0!!
         </Link>
         {children}

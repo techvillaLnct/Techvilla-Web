@@ -3,11 +3,11 @@ import { Button } from "@/components/Button"
 import { useRouter } from "next/navigation"
 export const UpcomingEvent = () => {
     const router = useRouter()
-    return <div id="events" className=" max-w-md flex flex-col  gap-4 border  rounded-md backdrop-blur-lg">
+    return <div id="events" className=" max-w-2xl flex flex-col  gap-4 border  rounded-md backdrop-blur-lg">
 
-        <Image src={"/codebeta2.0.png"} className="rounded-md  " width={1000} height={0} alt=""  ></Image>
+        <Image src={"/codebeta2.0.png"} className="rounded-md  " width={1500} height={0} alt=""  ></Image>
         <h1 className="text-center font-semibold ">CodeBeta 2.0</h1>
-        <p className="font-extralight px-4" >Join us for most awaiting LNCT Coding Competition - CODEBETA 2.0</p>
+        <p className="font-extralight px-4" >Join us for most awaiting Coding Competition - CODEBETA 2.0</p>
         <div className="flex flex-col gap-2">
             <div className="flex gap-2 px-8">
                 <Image src={"/Location.svg"} alt="" width={28} height={28} ></Image>
@@ -20,7 +20,7 @@ export const UpcomingEvent = () => {
         </div>
         <div className=" p-2">
             <Button className="w-full" onClick={() => {
-                router.push("/codebeta")
+                router.push("/codebeta-2.0")
             }}
             >Register Now</Button>
         </div>
