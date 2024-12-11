@@ -9,10 +9,10 @@ export const UpcomingEvent = () => {
         <Image src={"/codebeta2.0.png"} className="rounded-md  " width={1500} height={0} alt=""  ></Image>
         <h1 className={` ${inter.className} text-center text-xl font-bold tracking-wider`}>CodeBeta 2.0</h1>
         <p className={` ${inter.className} text-center   px-4 text-md font-medium`} >Join Us For Most Awaiting Coding Competition - CODEBETA 2.0</p>
-        <div className="flex justify-between gap-2">
-            <div className="flex gap-2 px-8">
+        <div className="flex flex-col md:flex-row justify-center md:justify-between gap-2">
+            <div className="flex items-center gap-2 px-8">
                 <Image src={"/Location.svg"} alt="" width={28} height={28} ></Image>
-                <p className="w-auto">G-01 , LNCT</p>
+                <p className="w-auto">G-01 , LNCT Main Building</p>
             </div> 
             <div className="flex gap-2  px-8">
                 <Image src={"/date.svg"} alt="" width={28} height={28} ></Image>
