@@ -168,6 +168,12 @@ export const pastEvents=[
 
 export const roadMapsdetails = [
     {
+        img: "/roadmaps/dsa.png",
+        title: "DSA Roadmap",
+        desc: "Master Data Structure and Algorithm",
+        link: "https://github.com/techvillaLnct/Roadmap/tree/main/roadmaps-main/roadmaps-main/DSA-Learning-Series-2024"
+    },
+    {
         img: "/roadmaps/web-dev.png",
         title: "Web Dev Roadmap",
         desc: "Master web development skills and become Web Developer.",
