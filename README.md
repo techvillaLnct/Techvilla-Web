@@ -2,7 +2,7 @@
 Welcome to **TechVilla Coding Club** — Empowering the Next Generation of Developers. We believe in **Code. Create. Contribute.** Our goal is to foster an inclusive and collaborative developer community.
 
 ## 🚀 Project Overview
-TechVilla is a web platform designed to support developers by providing access to resources, events, and a strong network of like-minded individuals. Join us in our mission to **empower the next generation of developers**.
+This is TechVilla's web platform designed to support developers by providing access to resources, events, and a strong network of like-minded individuals. Join us in our mission to **empower the next generation of developers**.
 
 ---
 
@@ -42,7 +42,7 @@ TechVilla is a web platform designed to support developers by providing access t
 ---
 
 ## 🏁 Getting Started
-Follow these steps to set up TechVilla locally.
+Follow these steps to set up TechVilla's Website locally.
 
 ### Prerequisites
 Make sure you have the following installed:
