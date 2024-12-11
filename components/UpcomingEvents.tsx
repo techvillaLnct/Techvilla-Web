@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { Button } from "@/components/Button"
 import { useRouter } from "next/navigation"
-import {geistVF,inter,GeistMonoVF} from '../app/fonts'
+import {inter} from '../app/fonts'
 export const UpcomingEvent = () => {
     const router = useRouter()
     return <div className={` ${inter.className} max-w-2xl flex flex-col  gap-4 border  rounded-md backdrop-blur-lg`}>
