@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Michroma } from "next/font/google";
 import "./globals.css";
 import Link from "next/link"
+import { Analytics } from '@vercel/analytics/next';
 
 const michroma = Michroma({
   weight: "400", 
@@ -29,6 +30,7 @@ export default function RootLayout({
           Register For CodeBeta 2.0!!
         </Link>
         {children}
+        <Analytics/>
       </body>
     </html>
   );
