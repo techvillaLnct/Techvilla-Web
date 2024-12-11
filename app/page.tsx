@@ -14,14 +14,14 @@ import {inter} from '../app/fonts'
 export default function Home() {
   const router = useRouter();
   return (
-    <div className=" h-full  w-screen  bg-center bg-cover  text-white  " style={{ backgroundImage: "url('/techvilla-bg.png')" }}>
+    <div className="h-full  w-screen  bg-center bg-cover  text-white  " style={{ backgroundImage: "url('/techvilla-bg.png')" }}>
       <div >
         <Appbar />
       </div>
-      <div className="mt-20 flex flex-col md:gap-2 gap-20 ">
+      <div className=" flex flex-col gap-10 mt-4 md:gap-20 ">
         {/* Heading of website */}
-        <div className="flex flex-col items-center justify-center gap-6 w-11/12 md:w-full relative left-4">
-          <div className="md:mt-[10rem]  flex flex-col items-center justify-center gap-4  mx-auto ">
+        <div className="flex flex-col h-[56vh] md:h-[62vh] items-center justify-center gap-6  md:w-full">
+          <div className="  flex flex-col items-center justify-center gap-4  mx-auto  ">
             <div className="w-80  md:w-full">
             <Image src="/techvilla-heading-logo.png" className="flex justify-center items-center" width={662} height={90} alt="" />
 
@@ -29,9 +29,12 @@ export default function Home() {
             <h2 className="text-center font-semibold text-sm md:text-lg">CODE . CREATE . CONTRIBUTE</h2>
             <div className="mt-2 space-y-4 flex flex-col items-center w-full gap-8">
               <p className=" text-center text-sm font-semibold mx-auto">Empowering the Next Generation of Developers</p>
+              <div >
               <Button2 onClick={() => {
                 router.push("https://tr.ee/Lgng69lmIE")
               }} text="Join Us" />
+
+              </div>
             </div>
           </div>
         </div>
@@ -52,8 +55,8 @@ export default function Home() {
         {/* Vision Mission ends  */}
 
         {/* Glimpses */}
-        <div className="flex flex-col items-center gap-4 my-1 px-5">
-          <h1 className="text-center text-xl">Glimpses</h1>
+        <div className="flex flex-col items-center gap-4 my-1 px-5 -mt-1 md:mt-20 ">
+          <h1 className={`${inter.className} text-center text-xl bg-white text-black rounded-2xl p-2`}>Glimpses</h1>
           <Carousel className="w-full max-w-7xl rounded-md">
             <CarouselContent className="rounded-md">
               {glimpses.map((data, index) => (
@@ -77,13 +80,13 @@ export default function Home() {
           </Carousel>
         </div>
         {/* Glimpses end hota hai*/}
-        <div className="flex flex-col items-center">
-          <h1 id="events" className="text-center text-xl mb-8 my-5 pt-4">Upcoming Events</h1>
+        <div className="flex flex-col items-center -mt-10 gap-4 md:gap-5 ">
+          <h1 id="events" className={`${inter.className} text-center text-xl bg-white text-black rounded-2xl p-2 md:mt-16`}>Upcoming Events</h1>
           <UpcomingEvent />
         </div>
-        <div id="team" className="px-24">
-          <h1 className="text-center text-xl mb-8 my-5">Meet Our Team</h1>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 px-10 mx-auto">
+        <div id="team" className="px-12  md:px-24 flex flex-col items-center">
+          <h1 className={`${inter.className} flex justify-center items-center  text-xl bg-white text-black rounded-2xl p-2 mb-4 md:mb-8 w-60 h-12`}>Meet Our Team</h1>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4  md:gap-8 px-10 mx-auto">
             {coreTeam.map((data, index) => (
               <Team
                 key={index}

@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation"
 import {inter} from '../app/fonts'
 export const UpcomingEvent = () => {
     const router = useRouter()
-    return <div className={` ${inter.className} max-w-2xl flex flex-col  gap-4 border  rounded-md backdrop-blur-lg`}>
+    return <div className={` ${inter.className} max-w-sm md:max-w-xl flex flex-col  gap-4 border  rounded-md backdrop-blur-lg`}>
 
         <Image src={"/codebeta2.0.png"} className="rounded-md  " width={1500} height={0} alt=""  ></Image>
         <h1 className={` ${inter.className} text-center text-xl font-bold tracking-wider`}>CodeBeta 2.0</h1>
