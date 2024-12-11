@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en" className={michroma.className} >
       <head><link rel="icon" href="/favicon_io/favicon.ico" sizes="any"   /></head>
       <body
-        className={` antialiased`}
+        className={` antialiased overflow-x-hidden`}
       >
         <Link href={"/codebeta-2.0"} className="flex justify-center bg-[#FF8B12] text-black font-semibold py-1  p-8 w-screen ">
           Register For CodeBeta 2.0!!

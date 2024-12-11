@@ -25,8 +25,8 @@ const images = [
 export default function Home() {
   const router = useRouter();
   return (
-    <div className=" h-full m-0 p-0 w-screen overflow-y-hidden bg-center  text-white  px-10" style={{ backgroundImage: "url('/techvilla-bg.png')" }}>
-      <div>
+    <div className=" h-full  w-screen  bg-center bg-cover  text-white  " style={{ backgroundImage: "url('/techvilla-bg.png')" }}>
+      <div className="">
         <Appbar />
       </div>
       <div className="mt-20 flex flex-col gap-20 ">

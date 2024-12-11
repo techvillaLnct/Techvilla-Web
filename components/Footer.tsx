@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const Footer = () => {
     return (
-        <div className="flex flex-col gap-6 my-3 backdrop-blur-lg py-8 px-4 md:px-16">
+        <div className="flex flex-col gap-6 my-3 bg-black py-8 px-4 md:px-16">
             <div className="flex flex-col md:flex-row items-center md:justify-between gap-6">
                 {/* Join Us Section */}
                 <div className="flex flex-col items-center md:items-start gap-4">
