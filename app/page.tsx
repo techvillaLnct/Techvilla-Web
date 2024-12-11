@@ -10,18 +10,6 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { Team } from "@/components/Team";
 import { UpcomingEvent } from "@/components/UpcomingEvents";
 import {inter} from '../app/fonts'
-const images = [
-  "/glimpses/merch-launch.jpg",
-  "/glimpses/codebeta-1.jpg",
-  "/glimpses/codebeta-winners.jpg",
-  "/glimpses/codebeta-2.jpg",
-  "/glimpses/codebeta-3.jpg",
-  "/glimpses/member-sync.jpg",
-  "/glimpses/opensource-host.jpg",
-  "/glimpses/opensource-team.jpg",
-  "/glimpses/solidity.png",
-  "/glimpses/merch-launch-2.jpg",
-];
 
 export default function Home() {
   const router = useRouter();
