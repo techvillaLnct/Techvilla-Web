@@ -75,11 +75,15 @@ Make sure you have the following installed:
 ```
 techvilla/
 ├── public/          # Static files (images, icons, etc.)
-├── src/             # Source files (components, pages, styles, etc.)
-│   ├── components/  # Reusable UI components
-│   ├── pages/       # Next.js pages (home, team, resources, etc.)
-│   ├── styles/      # Global and component styles
+├── app/             # Source files (components, pages, styles, etc.)
+│   ├── layout.tsx/  # Project metadata and script
+│   ├── page.tsx/       # Next.js pages (home, team, resources, etc.)
+│   ├── global.css/      # Global and component styles
+├── components     # Project all ui components
+├── lib/     # utils files
+    ├── utils.tsx/
 ├── package.json     # Project metadata and scripts
+├── tailwand.config.json     # Tailwand data
 └── README.md        # This file
 ```
 
