@@ -57,7 +57,9 @@ export const Appbar = () => {
                     <Link href="#events" className="hover:text-gray-300 hover:scale-110 transition-transform">
                         Events
                     </Link>
-                    <Button variant="outline" className="mt-2 md:mt-0 hover:scale-110 transition-transform">
+                    <Button onClick={()=>{
+                        alert("We will bring this feature soon")
+                    }} variant="outline" className="mt-2 md:mt-0 hover:scale-110 transition-transform">
                         Login
                     </Button>
                 </div>
