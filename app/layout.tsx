@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
-// import localFont from "next/font/local";
 import { Michroma } from "next/font/google";
 import "./globals.css";
 import Link from "next/link"
 
 const michroma = Michroma({
-  weight: "400", // Specify the font weight you need
-  subsets: ["latin"], // Character subset
+  weight: "400", 
+  subsets: ["latin"], 
 });
 
 
@@ -22,10 +21,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={michroma.className} >
+      <head><link rel="icon" href="/favicon_io/favicon.ico" sizes="any"   /></head>
       <body
         className={` antialiased`}
       >
-        <Link href={"/codebeta-2.0"} className="flex justify-center bg-[#FF8B12] text-black font-semibold py-1  p-8 ">
+        <Link href={"/codebeta-2.0"} className="flex justify-center bg-[#FF8B12] text-black font-semibold py-1  p-8 w-screen ">
           Register For CodeBeta 2.0!!
         </Link>
         {children}
