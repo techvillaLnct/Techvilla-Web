@@ -96,7 +96,7 @@ We welcome contributions from the community! Follow the steps below to get start
 1. **Fork the repository** (click the "Fork" button at the top-right of this page).
 2. **Clone your fork**:
    ```bash
-   git clone https://github.com/your-username/techvilla.git
+   git clone https://github.com/techvillaLnct/Techvilla-Web.git
    cd techvilla
    ```
 3. **Create a new branch** for your feature or bugfix:
@@ -144,7 +144,7 @@ This project is licensed under the **MIT License** — you're free to use, modif
 ---
 
 ## 💬 Get in Touch
-- **Discord**: [Join our Community](techvillalnct@gmail.com)
+- **Discord**: [Join our Community](https://discord.com/invite/NgXwHxKeFj)
 - **Email**: techvillalnct@gmail.com
 
 We'd love to have you on board! Feel free to raise an issue, contribute, or simply join the conversation.
