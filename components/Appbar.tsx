@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/Button"
 import { useState } from "react";
+import {GeistMonoVF,geistVF,inter} from '../app/fonts'
 
 export const Appbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +13,7 @@ export const Appbar = () => {
     };
 
     return (
-        <div className="flex items-center justify-between px-8 py-3 backdrop-blur-sm text-white text-xl">
+        <div className={`${geistVF.className} flex items-center justify-between px-8 py-3 backdrop-blur-sm text-white text-xl`}>
             {/* Logo */}
             <div className="flex-shrink-0">
                 <Image src="/Logo.svg" width={50} height={10} alt="Logo" />
@@ -41,7 +42,7 @@ export const Appbar = () => {
                 className={`${isOpen ? "block" : "hidden"
                     } absolute top-16 left-0 w-full bg-gray-800 md:bg-transparent md:static md:flex md:items-center md:gap-5 md:w-auto`}
             >
-                <div className="flex flex-col md:flex-row md:items-center gap-6 px-4 py-2 md:p-0 text-sm md:text-md">
+                <div className="flex flex-col md:flex-row md:items-center gap-6 px-4 py-2 md:p-0 text-md md:text-md text-inter ">
                     <Link href="/" className="hover:text-gray-300 hover:scale-110 transition-transform">
                         Home
                     </Link>

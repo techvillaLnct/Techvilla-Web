@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import {geistVF} from '../app/fonts'
 interface TeamProps {
   name: string;
   role: string;
@@ -49,8 +49,11 @@ export const Team = ({ name, role, img, links }: TeamProps) => {
         </div>
       </div>
       {/* Name and Role */}
-      <h2 className="text-center text-lg font-semibold">{name}</h2>
-      <p className="text-gray-400 text-sm text-center">{role}</p>
+      <div className="mt-2 flex flex-col gap-1">
+      <h2 className={`text-center text-md font-semibold`}>{name}</h2>
+      <p className={`${geistVF.className} text-gray-400 text-md text-center`}>{role}</p>
+
+      </div>
     </div>
   );
 };

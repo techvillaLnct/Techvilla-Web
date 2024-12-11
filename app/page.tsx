@@ -51,7 +51,7 @@ export default function Home() {
             <Card title="Vision" desc="Our Vision is to empower students with the power of coding and learning in public, that can unlock a world of infinite possibilities, and to alleviate the tech leaders of tommorow." />
           </div>
           <div>
-            <Card title="About Us" desc="TechVilla, LNCT's Coding Club, is a dynamic haven for tech-enthusiasts.We offer skill development, project collaboration, and networking opportunities. Join us at TechVilla, where we code, create, and contribute together. " />
+            <Card title="About Us" desc="TechVilla, LNCT's Coding Club, is a dynamic heven.We offer skill development, project collaboration, and networking opportunities. Join us at TechVilla, where we code, create, and contribute together. " />
           </div>
           <div>
             <Card title="Mission" desc=" Our mission is to provide hands-on learning opportunities through workshops, coding challenges, and real-life projects. We believe that practical experience is key to mastering tech skills." />

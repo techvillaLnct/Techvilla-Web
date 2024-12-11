@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import {geistVF} from '../app/fonts'
 
 export const Footer = () => {
     return (
