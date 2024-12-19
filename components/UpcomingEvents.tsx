@@ -23,7 +23,7 @@ export const UpcomingEvent = () => {
             <Button className="w-full text-lg hover:scale-[1.01] transition-transform" onClick={() => {
                 router.push("/codebeta-2.0")
             }}
-            >Register Now</Button>
+            >Registrations closed</Button>
         </div>
     </div>
 }

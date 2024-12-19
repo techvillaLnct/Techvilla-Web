@@ -143,7 +143,7 @@ export const coreTeam = [
 export const glimpses = [
     {
         img:"/glimpses/team-24.jpeg",
-        desc:"Meet The Offical Team of Core Team 2024-25"
+        desc:"Meet The Offical Core Team 2024-25"
     },
     {
         img:"/glimpses/orientation-24-1.png",
@@ -155,7 +155,7 @@ export const glimpses = [
     },
     {
         img:"/glimpses/orientation-24-3.jpg",
-        desc:"TechVilla President, Athar Introducing about Techvilla Club"
+        desc:"TechVilla Vice President, Athar Introducing about Techvilla Club"
     },
     {
         img:"/glimpses/orientation-dance.jpeg",
