@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Michroma } from "next/font/google";
 import "./globals.css";
-import Link from "next/link"
+// import Link from "next/link"
 import { Analytics } from '@vercel/analytics/next';
 
 const michroma = Michroma({
