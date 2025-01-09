@@ -10,6 +10,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { Team } from "@/components/Team";
 import { UpcomingEvent } from "@/components/UpcomingEvents";
 import {inter} from '../app/fonts'
+import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 
 export default function Home() {
   const router = useRouter();
@@ -22,13 +23,12 @@ export default function Home() {
         {/* Heading of website */}
         <div className="flex flex-col h-[56vh] md:h-[62vh] items-center justify-center gap-6  md:w-full">
           <div className="  flex flex-col items-center justify-center gap-4  mx-auto  ">
-            <div className="w-80  md:w-full">
             <Image src="/techvilla-heading-logo.png" className="flex justify-center items-center" width={662} height={90} alt="" />
-
+            <div className="w-80  md:w-full">
             </div>
-            <h2 className="text-center font-semibold text-sm md:text-lg">CODE . CREATE . CONTRIBUTE</h2>
+            <h2 className="text-center font-semibold text- md:text-lg">CODE . CREATE . CONTRIBUTE</h2>
             <div className="mt-2 space-y-4 flex flex-col items-center w-full gap-8">
-              <p className=" text-center text-sm font-semibold mx-auto">Empowering the Next Generation of Developers</p>
+              <TypewriterEffectSmooth  cursorClassName="h-[2px] flex items-center" className="text-sm" words={[{text:"Empowering the Next Generation of Developers" , className:"text-white  lg:text-3xl"}]}/>
               <div >
               <Button2 onClick={() => {
                 router.push("https://tr.ee/Lgng69lmIE")
@@ -81,7 +81,7 @@ export default function Home() {
         </div>
         {/* Glimpses end hota hai*/}
         <div className="flex flex-col items-center -mt-10 gap-4 md:gap-5 ">
-          <h1 id="events" className={`${inter.className} text-center text-xl bg-white text-black rounded-2xl p-2 mt-10 md:mt-16`}>Upcoming Events</h1>
+          <h1 id="events" className={`${inter.className} text-center text-xl text-white  rounded-2xl p-2 mt-10 md:mt-16`}>Upcoming Events</h1>
           <UpcomingEvent />
         </div>
         <div id="team" className="px-12  md:px-24 flex flex-col items-center">
