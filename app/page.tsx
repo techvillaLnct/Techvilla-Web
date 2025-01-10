@@ -26,9 +26,9 @@ export default function Home() {
             <Image src="/techvilla-heading-logo.png" className="flex justify-center items-center" width={662} height={90} alt="" />
             <div className="w-80  md:w-full">
             </div>
-            <h2 className="text-center font-semibold text- md:text-lg">CODE . CREATE . CONTRIBUTE</h2>
+            <h2 className="text-center font-semibold text- md:text-3xl">CODE . CREATE . CONTRIBUTE</h2>
             <div className="mt-2 space-y-4 flex flex-col items-center w-full gap-8">
-              <TypewriterEffectSmooth  cursorClassName="h-[2px] flex items-center" className="text-sm" words={[{text:"Empowering the Next Generation of Developers" , className:"text-white  lg:text-3xl"}]}/>
+              <TypewriterEffectSmooth  cursorClassName="h-[2px] flex items-center" className="" words={[{text:"Empowering the Next Generation of Developers" , className:"text-white text-sm md:text-5xl"}]}/>
               <div >
               <Button2 onClick={() => {
                 router.push("https://tr.ee/Lgng69lmIE")
@@ -56,7 +56,7 @@ export default function Home() {
 
         {/* Glimpses */}
         <div className="flex flex-col items-center gap-4 my-1 px-5 -mt-1 md:mt-20 ">
-          <h1 className={`${inter.className} text-center text-5xl text-white  rounded-2xl p-2 mt-10 md:mt-5`}>Glimpses</h1>
+          <h1 className={`${inter.className} text-center text-3xl font-bold md:text-5xl text-white  rounded-2xl p-2 mt-10 md:mt-5`}>Glimpses</h1>
           <Carousel className="w-full max-w-7xl rounded-md">
             <CarouselContent className="rounded-md">
               {glimpses.map((data, index) => (
@@ -81,11 +81,11 @@ export default function Home() {
         </div>
         {/* Glimpses end hota hai*/}
         <div className="flex flex-col items-center -mt-10 gap-4 md:gap-5 ">
-          <h1 id="events" className={`${inter.className} text-center text-5xl text-white  rounded-2xl p-2 mt-10 md:mt-16`}>Past Events</h1>
+          <h1 id="events" className={`${inter.className} text-center text-3xl font-bold md:text-5xl text-white  rounded-2xl p-2 mt-10 md:mt-16`}>Past Events</h1>
           <UpcomingEvent />
         </div>
         <div id="team" className="px-12  md:px-24 flex flex-col items-center">
-          <h1 className={`${inter.className} text-center text-5xl text-white  rounded-2xl p-2 mt-10 md:mt-16`}>Meet Our Team</h1>
+          <h1 className={`${inter.className} text-center text-3xl font-bold md:text-5xl text-white  rounded-2xl p-2 mt-10 md:mt-16`}>Meet Our Team</h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 mt-8 md:gap-8 px-10 mx-auto">
             {coreTeam.map((data, index) => (
               <Team
