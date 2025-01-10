@@ -306,3 +306,38 @@ export const roadMapsdetails = [
     }
 ];
 
+
+
+
+
+export const cards = [
+  {
+    id: 1,
+    // content: <SkeletonOne />,
+    className: "md:col-span-2",
+    thumbnail:
+      "/roadmaps/ios-dev.png",
+  },
+  {
+    id: 2,
+    // content: <SkeletonTwo />,
+    className: "col-span-1",
+    thumbnail:
+      "/roadmaps/ios-dev.png",
+  },
+  {
+    id: 3,
+    // content: <SkeletonThree />,
+    className: "col-span-1",
+    thumbnail:
+      "/roadmaps/ios-dev.png",
+  },
+  {
+    id: 4,
+    // content: <SkeletonFour />,
+    className: "md:col-span-2",
+    thumbnail:
+      "/roadmaps/ios-dev.png",
+  },
+];
+

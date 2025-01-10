@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
-import { Michroma } from "next/font/google";
+// import { Michroma } from "next/font/google";
+import { inter } from "./fonts";
 import "./globals.css";
 // import Link from "next/link"
 import { Analytics } from '@vercel/analytics/next';
 
-const michroma = Michroma({
-  weight: "400", 
-  subsets: ["latin"], 
-});
+// const inter = Michroma({
+//   weight: "400", 
+//   subsets: ["latin"], 
+// });
 
 
 export const metadata: Metadata = {
@@ -21,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={michroma.className} >
+    <html lang="en" className={inter.className} >
       <head><link rel="icon" href="/favicon_io/favicon.ico" sizes="any"   /></head>
       <body
         className={` antialiased overflow-x-hidden`}
