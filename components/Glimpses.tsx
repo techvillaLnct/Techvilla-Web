@@ -4,7 +4,7 @@ import { LayoutGrid } from "./ui/layout-grid";
 
 export function Glimpses() {
   return (
-    <div className="h-screen py-5 w-full ">
+    <div className="h-screen  w-full ">
       <LayoutGrid cards={cards} />
     </div>
   );
