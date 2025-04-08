@@ -89,7 +89,7 @@ export const coreTeam = [
         links:{
             instagram:"https://www.instagram.com/udayempire07/",
             linkedin:"https://www.linkedin.com/in/uday-kumar-empire07/",
-            twitter:"https://x.com/UdayEmpire003",
+            twitter:"https://x.com/udayempire_",
             github:"https://github.com/udayempire"
         }
     },
