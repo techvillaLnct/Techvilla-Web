@@ -31,7 +31,7 @@ export const PromoPopup = () => {
         <div className="text-5xl mb-2 animate-bounce text-center">🎉</div>
 
         {/* Title */}
-        <h2 className="text-3xl font-bold text-cyan-300 tracking-wide drop-shadow-lg">
+        <h2 className="text-3xl font-bold text-cyan-300 tracking-wide drop-shadow-lg text-center">
           Codeverse Is Here!
         </h2>
 
