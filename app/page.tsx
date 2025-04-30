@@ -8,9 +8,10 @@ import { useRouter } from "next/navigation"
 import Image from "next/image";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, } from "@/components/Carousel"
 import { Team } from "@/components/Team";
-import { UpcomingEvent } from "@/components/UpcomingEvents";
+import { PastEventCard } from "@/components/PastEventCard";
 import {inter} from '../app/fonts'
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
+import { UpcomingEvents } from "@/components/UpcomingEvents";
 
 export default function Home() {
   const router = useRouter();
@@ -81,8 +82,12 @@ export default function Home() {
         </div>
         {/* Glimpses end hota hai*/}
         <div className="flex flex-col items-center -mt-10 gap-4 md:gap-5 ">
+          <h1 id="upcomingEvent" className={`${inter.className} text-center text-3xl font-bold md:text-5xl text-white  rounded-2xl p-2 mt-10 md:mt-16`}>Upcoming Event</h1>
+          <UpcomingEvents/>
+        </div>
+        <div className="flex flex-col items-center -mt-10 gap-4 md:gap-5 ">
           <h1 id="events" className={`${inter.className} text-center text-3xl font-bold md:text-5xl text-white  rounded-2xl p-2 mt-10 md:mt-16`}>Past Events</h1>
-          <UpcomingEvent />
+          <PastEventCard />
         </div>
         <div id="team" className="px-12  md:px-24 flex flex-col items-center">
           <h1 className={`${inter.className} text-center text-3xl font-bold md:text-5xl text-white  rounded-2xl p-2 mt-10 md:mt-16`}>Meet Our Team</h1>
