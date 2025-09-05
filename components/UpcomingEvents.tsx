@@ -12,6 +12,13 @@ import {
 } from "lucide-react";
 import { useEffect, useState } from "react";
 
+interface UpcomingEvents{
+  title:string,
+  desc:string,
+  venue:string,
+  date:string,
+}
+
 const targetDate = new Date("2025-05-03T10:00:00");
 function getTimeLeft() {
   const now = new Date();
@@ -28,7 +35,7 @@ function getTimeLeft() {
     "0"
   )}:${String(seconds).padStart(2, "0")}`;
 }
-export const UpcomingEvents = () => {
+export const UpcomingEvents = ({title}) => {
   const router = useRouter();
   const [timeLeft, setTimeLeft] = useState(getTimeLeft());
   useEffect(() => {
@@ -82,7 +89,7 @@ export const UpcomingEvents = () => {
           <ClipboardList size={32} />
           Register Now!
         </Button>
-        <Button
+        {/* <Button
           className="flex items-center justify-center gap-2 py-2 w-full bg-gradient-to-r from-green-400 to-green-600 text-white rounded-xl shadow hover:opacity-90 transition-opacity"
           onClick={() => {
             router.push("https://p.hck.re/ciom");
@@ -90,7 +97,7 @@ export const UpcomingEvents = () => {
         >
           <PenBoxIcon size={32} />
           Try Mock Test
-        </Button>
+        </Button> */}
       </div>
     </div>
   );
