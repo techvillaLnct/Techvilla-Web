@@ -83,7 +83,7 @@ export default function Home() {
         {/* Glimpses end hota hai*/}
         <div className="flex flex-col items-center -mt-10 gap-4 md:gap-5 ">
           <h1 id="upcomingEvent" className={`${inter.className} text-center text-3xl font-bold md:text-5xl text-white  rounded-2xl p-2 mt-10 md:mt-16`}>Upcoming Event</h1>
-          <UpcomingEvents/>
+          <UpcomingEvents title={"Beyond DSA"} desc="The skills Companies Expect from Tech Graduates" date="2025-09-05T09:00:00" venue="Virtual" link="https://luma.com/nlsgrpfb"/>
         </div>
         <div className="flex flex-col items-center -mt-10 gap-4 md:gap-5 ">
           <h1 id="events" className={`${inter.className} text-center text-3xl font-bold md:text-5xl text-white  rounded-2xl p-2 mt-10 md:mt-16`}>Past Events</h1>
