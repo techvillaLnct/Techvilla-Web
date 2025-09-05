@@ -20,7 +20,7 @@ interface UpcomingEvents {
   link: string;
 }
 
-const targetDate = new Date("2025-05-03T10:00:00");
+const targetDate = new Date("2025-09-05T21:00:00");
 function getTimeLeft() {
   const now = new Date();
   const diff = targetDate.getTime() - now.getTime();
@@ -60,7 +60,7 @@ export const UpcomingEvents = ({
       <Image
         src={"/beyondDsa.jpg"}
         className="rounded-md  "
-        width={1500}
+        width={1200}
         height={0}
         alt=""
       ></Image>
@@ -92,7 +92,7 @@ export const UpcomingEvents = ({
         <Button
           className="flex items-center justify-center gap-2 py-2 w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl shadow hover:opacity-90 transition-opacity"
           onClick={() => {
-            window.open(link,"_blank")
+            window.open(link, "_blank");
           }}
         >
           <ClipboardList size={32} />
