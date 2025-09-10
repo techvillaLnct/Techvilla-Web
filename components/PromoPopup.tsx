@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
+import Image from "next/image";
 import { X } from "lucide-react";
 
 export const PromoPopup = () => {
@@ -29,10 +29,13 @@ export const PromoPopup = () => {
         </button>
 
         {/* Hiring Post Image */}
-        <img
+        <Image
           src="/HIRING_POST.png"
           alt="We Are Hiring"
+          width={600}
+          height={800}
           className="w-full rounded-xl mb-4 shadow-lg"
+          priority
         />
 
         {/* Call to Action */}
