@@ -4,6 +4,7 @@ import { inter } from "./fonts";
 import "./globals.css";
 // import Link from "next/link";
 import { Analytics } from "@vercel/analytics/next";
+import { PromoPopup } from "@/components/PromoPopup";
 // import { PromoPopup } from "@/components/PromoPopup";
 
 // const inter = Michroma({
@@ -28,7 +29,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon_io/favicon.ico" sizes="any" />
       </head>
       <body className={` antialiased overflow-x-hidden`}>
-        {/* <PromoPopup /> */}
+        <PromoPopup />
         {/* <Link
           href={"#upcomingEvent"}
           className="flex justify-center bg-[#FF8B12] text-black font-semibold py-1  p-8 w-screen text-center "

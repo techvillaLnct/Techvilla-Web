@@ -32,7 +32,7 @@ export default function Home() {
               <TypewriterEffectSmooth  cursorClassName="h-[2px] flex items-center" className="" words={[{text:"Empowering the Next Generation of Developers" , className:"text-white text-sm md:text-5xl"}]}/>
               <div >
               <Button2 onClick={() => {
-                router.push("https://tr.ee/Lgng69lmIE")
+                router.push("https://forms.gle/v9fpLB1UZJxpsxHZ7")
               }} text="Join Us" />
 
               </div>
